@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><title>Street View split-map-panes</title><script>
       function szinit() {const szbwf = { lat: 51.594464388760585, lng: -0.08137674447946007 }; const map = new google.maps.Map(document.getElementById("szmapdv"), {center: szbwf, zoom: 16, });
         const panorama = new google.maps.StreetViewPanorama( document.getElementById("pano"), {position: szbwf, pov: {heading: 34, pitch: 10,  },  }  );   map.setStreetView(panorama);   }
-      window.initialize = szinit;  </script>    <style> html, body {height: 100%; margin: 0;  padding: 0; } #map, #pano {float: left; height: 100%; width: 50%; }</style></head> <body>
+      window.initialize = szinit;  </script>    <style> html, body {height: 100%; margin: 0;  padding: 0; } #szmapdv, #pano {float: left; height: 100%; width: 50%; }</style></head> <body>
     <div id="szmapdv"></div><div id="pano"></div><script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN6cy_cT_M-fqRG6CVNBxEFNGfFQasznY&callback=szinit&v=weekly"
       defer></script></body></html>
 
